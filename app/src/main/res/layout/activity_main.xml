@@ -30,43 +30,31 @@
 
                 <TextView
                     style="@style/TeamName"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="@string/eagles" />
 
                 <TextView
                     android:id="@+id/eagles_score"
                     style="@style/Score"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="@string/score" />
 
                 <Button
                     style="@style/Button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:onClick="touchdownEagles"
                     android:text="@string/touchdown" />
 
                 <Button
                     style="@style/Button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:onClick="conversionEagles"
                     android:text="@string/conversion" />
 
 
                 <Button
                     style="@style/Button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:onClick="fieldGoalEagles"
                     android:text="@string/field_goal" />
 
                 <Button
                     style="@style/Button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:onClick="safetyEagles"
                     android:text="@string/safety" />
 
@@ -90,42 +78,30 @@
 
                 <TextView
                     style="@style/TeamName"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="@string/patriots" />
 
                 <TextView
                     android:id="@+id/patriots_score"
                     style="@style/Score"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="@string/score" />
 
                 <Button
                     style="@style/Button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:onClick="touchdownPatriots"
                     android:text="@string/touchdown" />
 
                 <Button
                     style="@style/Button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:onClick="conversionPatriots"
                     android:text="@string/conversion" />
 
                 <Button
                     style="@style/Button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:onClick="fieldGoalPatriots"
                     android:text="@string/field_goal" />
 
                 <Button
                     style="@style/Button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:onClick="safetyPatriots"
                     android:text="@string/safety" />
 
