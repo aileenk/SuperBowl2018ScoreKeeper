@@ -1,186 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blueGray900"
-    tools:context="com.example.android.superbowl2018scorekeeper.MainActivity">
+    android:fillViewport="true">
 
-    <LinearLayout
-        android:id="@+id/mainScoreKeeper"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:scrollbars="vertical"
+        tools:context="com.example.android.superbowl2018scorekeeper.MainActivity">
 
         <LinearLayout
-            android:layout_width="@dimen/value_0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/value_80dp"
-                android:layout_marginTop="@dimen/value_16dp"
-                android:contentDescription="@string/eagles"
-                android:src="@drawable/eagles_large" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/eagles"
-                android:textAlignment="center"
-                android:textAllCaps="true"
-                android:textColor="@color/white"
-                android:textSize="@dimen/value_16sp" />
-
-            <TextView
-                android:id="@+id/eagles_score"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/score"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="@dimen/value_44sp" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/value_8dp"
-                android:layout_marginLeft="@dimen/value_20dp"
-                android:layout_marginRight="@dimen/value_20dp"
-                android:onClick="touchdownEagles"
-                android:text="@string/touchdown" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/value_8dp"
-                android:layout_marginLeft="@dimen/value_20dp"
-                android:layout_marginRight="@dimen/value_20dp"
-                android:onClick="conversionEagles"
-                android:text="@string/conversion" />
-
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/value_8dp"
-                android:layout_marginLeft="@dimen/value_20dp"
-                android:layout_marginRight="@dimen/value_20dp"
-                android:onClick="fieldGoalEagles"
-                android:text="@string/field_goal" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/value_8dp"
-                android:layout_marginLeft="@dimen/value_20dp"
-                android:layout_marginRight="@dimen/value_20dp"
-                android:onClick="safetyEagles"
-                android:text="@string/safety" />
-
-        </LinearLayout>
-
-        <View
-            android:layout_width="@dimen/value_1dp"
-            android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/value_20dp"
-            android:background="@android:color/darker_gray" />
-
-        <LinearLayout
-            android:layout_width="@dimen/value_0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/value_80dp"
-                android:layout_marginTop="@dimen/value_16dp"
-                android:contentDescription="@string/patriots"
-                android:src="@drawable/new_england_patriots" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/patriots"
-                android:textAlignment="center"
-                android:textAllCaps="true"
-                android:textColor="@color/white"
-                android:textSize="@dimen/value_16sp" />
-
-            <TextView
-                android:id="@+id/patriots_score"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/score"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="@dimen/value_44sp" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/value_8dp"
-                android:layout_marginLeft="@dimen/value_20dp"
-                android:layout_marginRight="@dimen/value_20dp"
-                android:onClick="touchdownPatriots"
-                android:text="@string/touchdown" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/value_8dp"
-                android:layout_marginLeft="@dimen/value_20dp"
-                android:layout_marginRight="@dimen/value_20dp"
-                android:onClick="conversionPatriots"
-                android:text="@string/conversion" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/value_8dp"
-                android:layout_marginLeft="@dimen/value_20dp"
-                android:layout_marginRight="@dimen/value_20dp"
-                android:onClick="fieldGoalPatriots"
-                android:text="@string/field_goal" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/value_8dp"
-                android:layout_marginLeft="@dimen/value_20dp"
-                android:layout_marginRight="@dimen/value_20dp"
-                android:onClick="safetyPatriots"
-                android:text="@string/safety" />
-
-        </LinearLayout>
-    </LinearLayout>
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/mainScoreKeeper">
-
-        <ImageView
-            android:id="@+id/logo"
+            android:id="@+id/mainScoreKeeper"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_above="@id/resetButton"
-            android:layout_marginTop="@dimen/value_8dp"
-            android:contentDescription="@string/superbowl_logo"
-            android:src="@drawable/superbowl_logo" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/resetButton"
+            <LinearLayout
+                android:layout_width="@dimen/value_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/TeamImage"
+                    android:contentDescription="@string/eagles"
+                    android:src="@drawable/eagles_large" />
+
+                <TextView
+                    style="@style/TeamName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eagles" />
+
+                <TextView
+                    android:id="@+id/eagles_score"
+                    style="@style/Score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/score" />
+
+                <Button
+                    style="@style/Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="touchdownEagles"
+                    android:text="@string/touchdown" />
+
+                <Button
+                    style="@style/Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="conversionEagles"
+                    android:text="@string/conversion" />
+
+
+                <Button
+                    style="@style/Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="fieldGoalEagles"
+                    android:text="@string/field_goal" />
+
+                <Button
+                    style="@style/Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="safetyEagles"
+                    android:text="@string/safety" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/Line"
+                android:layout_width="@dimen/value_1dp"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="@dimen/value_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/TeamImage"
+                    android:contentDescription="@string/patriots"
+                    android:src="@drawable/new_england_patriots" />
+
+                <TextView
+                    style="@style/TeamName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/patriots" />
+
+                <TextView
+                    android:id="@+id/patriots_score"
+                    style="@style/Score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/score" />
+
+                <Button
+                    style="@style/Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="touchdownPatriots"
+                    android:text="@string/touchdown" />
+
+                <Button
+                    style="@style/Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="conversionPatriots"
+                    android:text="@string/conversion" />
+
+                <Button
+                    style="@style/Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="fieldGoalPatriots"
+                    android:text="@string/field_goal" />
+
+                <Button
+                    style="@style/Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="safetyPatriots"
+                    android:text="@string/safety" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="@dimen/value_8dp"
-            android:onClick="reset"
-            android:text="@string/reset" />
-    </RelativeLayout>
+            android:layout_below="@id/mainScoreKeeper">
 
-</RelativeLayout>
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/resetButton"
+                android:layout_marginTop="@dimen/value_8dp"
+                android:contentDescription="@string/superbowl_logo"
+                android:src="@drawable/superbowl_logo" />
+
+            <Button
+                android:id="@+id/resetButton"
+                style="@style/Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="reset"
+                android:text="@string/reset" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

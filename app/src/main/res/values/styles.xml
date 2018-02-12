@@ -2,14 +2,43 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-
+        <!-- Background color -->
+        <item name="android:background">@color/blueGray900</item>
         <!-- Background color of buttons in the app -->
-        <item name="colorButtonNormal">#9E9E9E</item>
+        <item name="colorButtonNormal">@color/gray500</item>
+    </style>
 
+    <style name="TeamName" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/value_16sp</item>
+    </style>
+
+    <style name="Score" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/value_44sp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="Line" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@android:color/darker_gray</item>
+        <item name="android:layout_marginTop">@dimen/value_20dp</item>
+    </style>
+
+    <style name="Button" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_marginBottom">@dimen/value_8dp</item>
+        <item name="android:layout_marginLeft">@dimen/value_20dp</item>
+        <item name="android:layout_marginRight">@dimen/value_20dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TeamImage" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_height">@dimen/value_80dp</item>
+        <item name="android:layout_marginTop">@dimen/value_16dp</item>
+        <item name="android:layout_width">match_parent</item>
     </style>
 
 </resources>

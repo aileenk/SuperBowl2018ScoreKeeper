@@ -7,9 +7,10 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    static final String Eagles_score = "eagles_score";
+    static final String Patriots_score = "patriots_score";
     //Tracks the score for the Eagles.
     int eagles = 0;
-
     //Tracks the score for the Patriots.
     int patriots = 0;
 
@@ -17,6 +18,26 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle savedInstanceState) {
+        // Save custom values into the bundle
+        savedInstanceState.putInt("eagles_score", eagles);
+        savedInstanceState.putInt("patriots_score", patriots);
+        // Always call the superclass so it can save the view hierarchy state
+        super.onSaveInstanceState(savedInstanceState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        // Always call the superclass so it can restore the view hierarchy
+        super.onRestoreInstanceState(savedInstanceState);
+        // Restore state members from saved instance
+        eagles = savedInstanceState.getInt(Eagles_score);
+        patriots = savedInstanceState.getInt(Patriots_score);
+        displayForEagles(eagles);
+        displayForPatriots(patriots);
     }
 
     /**
@@ -108,4 +129,5 @@ public class MainActivity extends AppCompatActivity {
         displayForEagles(0);
         displayForPatriots(0);
     }
+
 }

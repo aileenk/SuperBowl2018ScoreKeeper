@@ -10,6 +10,6 @@
     <string name="touchdown">Touchdown</string>
     <string name="conversion">Extra Point</string>
     <string name="field_goal">Field Goal</string>
-    <string name="safety">Safety/\n2-Point Conversion</string>
+    <string name="safety">Safety /\n2-Point Conversion</string>
     <string name="reset">Reset</string>
 </resources>
